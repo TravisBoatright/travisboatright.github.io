@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Boatright - Design x Social Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo" style="letter-spacing:-4px; font-size: 2.4rem; padding-left:3px">tb</div>
+        <button class="menu-button">Menu</button>
+    </nav>
+    
+    <div class="mega-nav" height: 100%;">
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="values.html">values</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </div>
+    
+<main>
+
+    <div class="border-left">
+
+    </div>
+
+    <div class="content">
+        <h1>TRAVIS BOATRIGHT</h1>
+        <h2 style="margin-bottom: -24px;">design</h2>
+        <h2 style="margin-bottom: -12px; color: #625B54">x</h1>
+        <h2 style="margin-top: 8px; line-height: 42px;">social work</h2>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="arrow">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+        </div>
+        <div class="learn-more">Learn More</div>
+    </div>
+</main>
+
+    <div class="content-light">
+        <div class="center-content">
+            <h2 style="margin-bottom: -46px;">vision</h2>
+            <h2 style="margin-bottom: -57px; margin-left:132px; color: #625B54">&</h1>
+            <h2 style="margin-right:-270px;">values</h2>
+        </div>
+
+        <div class="body-content">
+            <p>I am a designer that is interested in making an impact on how people experience the world online. After 10 years of working as a designer, I hope to use my insights from technology and design to do research focused on social policies trying to help build a more inclusive and compassionate society.
+            </p>
+        </div>
+
+        <a class="button" href="values.html">See values</a>
+
+    </div>
+
+    <div class="content-dark">
+            <h2 style="color:#E3E3E3;">skills</h2>
+
+        <div class="body-content">
+            <ul style="color:#E3E3E3;"">
+                <li>Experience working with data formulating hypotheses for prototypes which improves and accelerates our feedback loops with our customers.</li>
+                    <li>Knowledge of front-end development to collaborate with engineers to maintain and increase velocity across product teams.</li>
+<li>“Build in public” mindset making communication across teams more effective and creating more points of feedback across the product process.</li>
+<li>A knack for product management to make sure I am focusing on the right priorities and asking the right questions from data and insights.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const megaNav = document.querySelector('.mega-nav');
+        const logo = document.querySelector('.logo');
+        
+        menuButton.addEventListener('click', () => {
+            megaNav.classList.toggle('active');
+            body.classList.toggle('no-scroll');
+            if (megaNav.classList.contains('active')) {
+                menuButton.textContent = 'Close';
+                menuButton.classList.add('white');
+                logo.classList.add('white');
+            } else {
+                menuButton.textContent = 'Menu';
+                menuButton.classList.remove('white');
+                logo.classList.remove('white');
+            }
+        });
+    </script>
+</body>
+</html>

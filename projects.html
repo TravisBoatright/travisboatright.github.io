@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Boatright - Design x Social Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo" style="letter-spacing:-4px; font-size: 2.4rem; padding-left:3px">tb</div>
+        <button class="menu-button">Menu</button>
+    </nav>
+    
+    <div class="mega-nav" height: 100%;">
+        <ul class="nav-links">
+            <li><a href="home.html">home</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="values.html">values</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="projects">
+        <h1>projects</h1>
+
+        <div class="project">
+            <h3>2024-Present</h3>
+            <h2><a href="#">Writing</a></h2>
+        </div>
+
+        <div class="project">
+            <h3>2023-Present</h3>
+            <h2><a href="#">Crisis Text Line</a></h2>
+        </div>
+
+        <div class="project">
+            <h3>2020-2022</h3>
+            <h2><a href="#">Mural</a></h2>
+        </div>
+
+        <div class="project">
+            <h3>2020-2022</h3>
+            <h2><a href="#">Consulting</a></h2>
+        </div>
+        
+    </div>
+
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const megaNav = document.querySelector('.mega-nav');
+        const logo = document.querySelector('.logo');
+        
+        menuButton.addEventListener('click', () => {
+            megaNav.classList.toggle('active');
+            body.classList.toggle('no-scroll');
+            if (megaNav.classList.contains('active')) {
+                menuButton.textContent = 'Close';
+                menuButton.classList.add('white');
+                logo.classList.add('white');
+            } else {
+                menuButton.textContent = 'Menu';
+                menuButton.classList.remove('white');
+                logo.classList.remove('white');
+            }
+        });
+    </script>
+</body>
+</html>
