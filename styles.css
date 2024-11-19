@@ -295,7 +295,6 @@ p {
 }
 
 
-
 @keyframes bounce-and-fade {
     0% {
         transform: translateY(0);
@@ -309,4 +308,8 @@ p {
         transform: translateY(0);
         opacity: 0.3;
     }
+}
+
+@media screen and (min-width: 800px) {
+
 }

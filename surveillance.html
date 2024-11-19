@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Boatright - Design x Social Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo" style="letter-spacing:-4px; font-size: 2.4rem; padding-left:3px">tb</div>
+        <button class="menu-button">Menu</button>
+    </nav>
+    
+    <div class="mega-nav" height: 100%;">
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="journey.html">journey</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="values.html">values</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="projects">
+        <h1>Surveillance</h1>
+
+        <div class="project" style="border-bottom: 2px solid #7FA7BC; margin-bottom:16px;">
+            <h3>The Racial Contract and Surveillance</h3>
+            <p>This was a reflective paper written for a course called "American Racism and Social Work Practice" at the University of Pennsylvania in 2024.</p>
+        </div>
+
+        <p>
+            The Racial Contract applies to our present environment and our future environment as we extend our identities to the internet and other online experiences. What are the potential harms that could occur when anonymous identities can be a signatory to the Racial Contract? A digital Racial Contract could have more expansive impact in which online information is spread and people sign off to it.<br><br>
+            For a few years, I have been following a theme of online experiences that allow people self-police their communities. It has evolved through apps like NextDoor, a Facebook group complaining about neighbors, or even just communities chatting outside around the block. As we enter 2024, we are seeing large tech companies get behind these ideas and expand the scale by partnering with local governments on the data they are collecting coined by Elizabeth Joh as a networked surveillance ecosystem (EFF 2024).<br><br>
+            Ring, which is owned by Amazon, announced their app called Neighbors, which the current website describes the app as, “Neighbors users put an end to local crime spree,” and “Connecting with public safety agencies for safer communities” (Amazon Ring 2024). Another large app gaining significant users is Citizen. Citizen (2024) describes its app as people acting to safety alerts in real time and its transparency that bonds and that empowers a community, from residents to the government. The first version of the Citizen app was called Vigilante (Kim 2024). False reports and racial profiling were the results of the mass surveillance approach of the app which is continuing to grow. They even experimented with being able to summon a private police force. This type of app could instantly be weaponized based of fear, bias, and overt racism in communities. What happens when we view these types of experiences through the lens of the Racial Contract?<br><br>
+            
+            The Racial Contract (1997) explains how society was created or crucially transformed, how the individuals in that society were reconstituted, how the state was established, and how a particular moral code and a certain moral psychology were brought into existence (pp. 10). The basis of this contract, both formal and informal agreements, is that it will benefit and create privilege for white people and will exploit nonwhites of their bodies, land, and resources (pp. 11). I can only imagine that apps using fear to target a group of people, mostly white people, to report crimes in real-time, without any guidelines, trainings, or understanding of how the data is going to be used. This will reinforce the Racial Contract in the physical world, but now digitizing it and extending its impact by exacerbating racial tensions in cities. Beyond what individuals could do with these apps, the data is being given to local law enforcement in most cases further weaponizing police forces. Data might be a new weapon to further criminalize the Black community and other communities of color.<br><br>
+            I have little faith that this is the right solution to solve crime in communities knowing the history of perceived crime by police officers in America. In the Condemnation of Blackness (2010), we learned about the Philadelphia meeting in 1912 between an interracial delegation led by James Stemons with Mayor Rudolph J. Blankenship (pp. 189). During this meeting, Black leaders spoke to issues they were seeing with crime, education, and social equality. Stemons was under the perception that the mayor received proposal in the meeting well. Unsurprisingly, an alternative proposal of an association from the mayor, only including white people, to co-operate with the police and report any disturbances and illegal activity. They believed it would be the good citizens and public officials working together to make perfect order in the city (pp. 190). <br><br>
+                Our society has been trying to solve crime for too long and they keep falling into the same flawed solutions. Instead of attempting to reimagine what society could look like and work with marginalized communities, they continue to extend power to the dominant white community to “solve” crime as they see fit. In this new era of internet and data infused solutions should prompt for new concerns. We need to question who is building this technology, what data is being created and stored, and how is it being distributed globally covertly and overtly to grow signatories of the Racial Contract.
+        </p>
+
+        <div class="project">
+            <h3>References</h3>
+            <ul style="list-style: none; padding-left: 0px;">
+                <li>Amazon Ring. (2024). Neighbors app by ring: Real-time Crime & Safety Alerts. Ring. https://ring.com/neighbors</li>
+                <li>Citizen. (2024). Keeping you safe & informed. https://citizen.com/</li>
+                <li>Kim, G. (2021, July 22). False arrest, racial profiling: Why the citizen app is a threat to vulnerable communities. Fast Company. https://www.fastcompany.com/90657035/false-arrest-racial-profiling-why-the-citizen-app-is-a-threat-to-vulnerable-communities</li>
+                <li>Charles Mills (1997). The Racial Contract. Ithaca: Cornell University Press.</li>
+                <li>Muhammad, K. G. (2010). The condemnation of blackness: Race, crime, and the making of Modern Urban America, with a new preface. Harvard University Press.</li>
+                <li>EFF. (2024). Community surveillance apps. Community Surveillance Apps. https://sls.eff.org/technologies/community-surveillance-apps</li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const megaNav = document.querySelector('.mega-nav');
+        const logo = document.querySelector('.logo');
+        
+        menuButton.addEventListener('click', () => {
+            megaNav.classList.toggle('active');
+            body.classList.toggle('no-scroll');
+            if (megaNav.classList.contains('active')) {
+                menuButton.textContent = 'Close';
+                menuButton.classList.add('white');
+                logo.classList.add('white');
+            } else {
+                menuButton.textContent = 'Menu';
+                menuButton.classList.remove('white');
+                logo.classList.remove('white');
+            }
+        });
+    </script>
+</body>
+</html>
