@@ -1,10 +1,19 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 32px;
+    position: relative;
+}
+
 body {
-    margin: 32px;
+    margin: 0;
     padding: 0;
-    min-height: calc(100vh - 64px);
+    min-height: 100vh;
+    font-family: 'Instrument Serif', serif;
     overflow-x: hidden;
     position: relative;
     background-color: #E7E1D4;
+    color: #7A263A;
 }
 
 .button {
@@ -29,11 +38,14 @@ body {
   }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1000;
+        padding-top: 32px; 
+        padding-left: 32px;
+        padding-right:32px;
 }
 
 .logo {
@@ -79,11 +91,12 @@ main {
     height:68vh;
     background-color: #7FA7BC;
     margin-top: 16px;
-    margin-left:11px;
+    margin-left:43px;
     border-radius: 100%;
 }
 
 .content-light {
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,8 +104,7 @@ main {
     min-height: calc(90vh);
     text-align: center;
     background-color: #E7E1D4;
-    padding-left:32px;
-    padding-right:32px;
+    margin: 0 auto;
 }
 
 .content-dark {
@@ -102,12 +114,8 @@ main {
     align-items: center;
     justify-content: center;
     min-height: calc(90vh);
-    text-align: center;
     background-color:#7A263A;
-    padding-left:32px;
-    padding-right:32px;
-    margin-left:-32px;
-    margin-bottom: -32px;
+    margin: 0 auto;
 }
 
 ul {
@@ -115,6 +123,8 @@ ul {
     line-height: 24px;
     text-align: left;
     font-family: 'Instrument Sans', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 li {
@@ -154,6 +164,9 @@ p {
     line-height: 24px;
     text-align: left;
     font-family: 'Instrument Sans', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 16px;
 }
 
 .scroll-indicator {
@@ -162,6 +175,7 @@ p {
     display: flex;
     align-items: center;
     gap: 12px;
+    padding-left: 32px;
 }
 
 .arrow {
@@ -238,6 +252,7 @@ p {
 
 .projects {
     justify-content: left;
+    margin: 32px;
 
 }
 
@@ -294,6 +309,11 @@ p {
     letter-spacing: .03em;
 }
 
+img {
+    max-width: 80%;
+
+}
+
 
 @keyframes bounce-and-fade {
     0% {
@@ -310,6 +330,18 @@ p {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 768px) {
+
+ul {
+    max-width:80%
+}
+
+p {
+    max-width:80%;
+}
+
+img {
+    max-width: 100%;
+}
 
 }
